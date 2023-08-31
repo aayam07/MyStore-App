@@ -13,10 +13,11 @@ struct ContentView: View {
     
     //MARK: - BODY
     var body: some View {
+        // ZStack is embedded to overcome the notches in different iPhones
         ZStack {
             VStack(spacing: 0) {
                 NavigationBarView()
-                    .padding(.horizontal)
+//                    .padding(.horizontal)
                     .padding(.horizontal, 15)
                     .padding(.bottom)
                     .padding(.top, UIApplication.shared.connectedScenes
@@ -26,10 +27,19 @@ struct ContentView: View {
                     .background(Color.white)
                     .shadow(color: .black.opacity(0.05), radius: 5, x: 0, y: 5)  // navigation bar view ko sabai content mai shadow apply huncha
                 
-                Spacer()
+                ScrollView(.vertical, showsIndicators: false) {
+                    VStack(spacing: 0) {
+                        FeaturedTabView()
+//                            .frame(height: UIScreen.main.bounds.width / 1.475)
+                            .frame(minHeight: 256)
+                            .padding(.vertical, 10)
+                        
+                        FooterView()
+                            .padding(.horizontal)
+                    }  //: VSTACK
+                }  //: SCROLL VIEW
                 
-                FooterView()
-                    .padding(.horizontal)
+                
             }  //: VSTACK
             .background(colorBackground.ignoresSafeArea(.all, edges: .all))
         }  //: ZSTACK
