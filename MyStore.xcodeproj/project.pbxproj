@@ -27,6 +27,7 @@
 		A082F4102AA2E5AC0012C408 /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082F40F2AA2E5AC0012C408 /* CategoryItemView.swift */; };
 		A082F4122AA2E82B0012C408 /* CategoryGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082F4112AA2E82B0012C408 /* CategoryGridView.swift */; };
 		A082F4142AA2EDB40012C408 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082F4132AA2EDB40012C408 /* SectionView.swift */; };
+		A082F4162AA346E50012C408 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A082F4152AA346E50012C408 /* TitleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		A082F40F2AA2E5AC0012C408 /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
 		A082F4112AA2E82B0012C408 /* CategoryGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGridView.swift; sourceTree = "<group>"; };
 		A082F4132AA2EDB40012C408 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		A082F4152AA346E50012C408 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				A082F40F2AA2E5AC0012C408 /* CategoryItemView.swift */,
 				A082F4112AA2E82B0012C408 /* CategoryGridView.swift */,
 				A082F4132AA2EDB40012C408 /* SectionView.swift */,
+				A082F4152AA346E50012C408 /* TitleView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				A082F4102AA2E5AC0012C408 /* CategoryItemView.swift in Sources */,
 				A0300B882AA04664007B2FBF /* FeaturedTabView.swift in Sources */,
 				A0300B822AA0400B007B2FBF /* PlayerModel.swift in Sources */,
+				A082F4162AA346E50012C408 /* TitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
