@@ -45,6 +45,10 @@ struct ContentView: View {
                         }  //: LAZYVGRID
                         .padding(15)
                         
+                        TitleView(title: "Brands")
+                        
+                        BrandGridView()
+                        
                         FooterView()
                             .padding(.horizontal)
                     }  //: VSTACK
