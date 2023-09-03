@@ -33,6 +33,7 @@ struct ContentView: View {
 //                            .frame(height: UIScreen.main.bounds.width / 1.475)
                             .frame(minHeight: 256)
                             .padding(.vertical, 10)
+
                         
                         CategoryGridView()
                         

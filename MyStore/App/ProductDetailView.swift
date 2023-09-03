@@ -28,19 +28,43 @@ struct ProductDetailView: View {
             // DETAIL TOP PART
             TopPartDetailView()
                 .padding(.horizontal)
+                .zIndex(1)  // higher value will move this part above other views
             
             // DETAIL BOTTOM PART
+            VStack(alignment: .center, spacing: 0) {
+                // RATINGS + SIZES
+                RatingsSizesDetailView()
+                    .padding(.top, -25)
+                    .padding(.bottom, 10)
+                
+                // DESCRIPTION
+                ScrollView(.vertical, showsIndicators: false) {
+                    Text(sampleProduct.description)
+                        .font(.system(.body, design: .rounded))
+                        .foregroundColor(.gray)
+                        .multilineTextAlignment(.leading)
+                }  //: SCROLL
+                
+                // QUANTITY + FAVOURITE
+                QuantityFavouriteDetailView()
+                    .padding(.vertical, 10)
+                
+                // ADD TO CART
+                AddToCartDetailView()
+                    .padding(.bottom, 20)
+                
+            } //: VSTACK
+            .padding(.horizontal)
+            .background(
+                Color.white
+                    .clipShape(CustomShape())
+                    .padding(.top, -105)
+//                    .frame(width: UIScreen.main.bounds.width)
+            )
             
-            // RATINGS + SIZES
-            
-            // DESCRIPTION
-            
-            // QUANTITY + FAVOURITE
-            
-            // ADD TO CART
-            Spacer()
             
         }  //: VSTACK
+        .zIndex(0)
         .ignoresSafeArea(.all, edges: .all)
         .background(
             Color(
