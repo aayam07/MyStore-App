@@ -46,7 +46,10 @@ struct ContentView: View {
                                 ForEach(products) { product in
                                     ProductItemView(product: product)
                                         .onTapGesture {
-                                            withAnimation(.easeOut) {
+                                            
+                                            feedback.impactOccurred()
+                                            
+                                            withAnimation(.easeOut(duration: 2)) {
                                                 // SwiftUI tracks for any changes in these properties in the environment and automatically triggers the view's update
                                                 shop.selectedProduct = product
                                                 shop.showingProduct = true

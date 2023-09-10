@@ -18,6 +18,7 @@ struct NavigationBarDetailView: View {
             Button {
                 // Action
                 withAnimation(.easeIn) {
+                    feedback.impactOccurred()
                     shop.selectedProduct = nil
                     shop.showingProduct = false
                 }

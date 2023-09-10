@@ -16,6 +16,7 @@ struct AddToCartDetailView: View {
     var body: some View {
         Button {
             // Action
+            feedback.impactOccurred()
         } label: {
             // To make the button flexible horizontally, we add Spacer() as below
             Spacer()
